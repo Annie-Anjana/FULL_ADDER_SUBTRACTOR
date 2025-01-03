@@ -53,8 +53,24 @@ Write the detailed procedure here
 **Program:**
 
 /* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
+```
+ FULL ADDER
+ module fulladderandsubtractor(a,b,c,p,q);
+ input a,b,c;
+ output p,q;
+ assign p=a^b^c;
+ assign q=(a&b)|(b&c)|(a&c);
+ endmodule
+ FULL SUBTRACTOR
+ module fullsubtractor(v,j,b,t,s)
+ input v,j,b;
+ output t,s;
+ assign t=v^j^b;
+ assign s=(~v&b)|(~v&j)|(~j&b);
+ endmodule
+```
 
-Developed by: RegisterNumber:
+Developed by: ANNIE ANJANA A RegisterNumber:24010978
 
 
 **RTL Schematic**
